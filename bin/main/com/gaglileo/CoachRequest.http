@@ -1,0 +1,51 @@
+POST http://127.0.0.1:8080/coach
+Content-Type: application/json
+
+{
+  "id": "100",
+  "firstName": "Leo",
+  "lastName": "Gagliardi",
+  "email": "leo.gagliardi@fantacalcio.it"
+}
+
+
+###
+POST http://127.0.0.1:8080/coach
+Content-Type: application/json
+
+{
+  "id": "200",
+  "firstName": "Marco",
+  "lastName": "Greco",
+  "email": "marco.greco@fantacalcio.it"
+}
+
+###
+POST http://127.0.0.1:8080/coach
+Content-Type: application/json
+
+{
+  "id": "300",
+  "firstName": "Fortunato",
+  "lastName": "Mafrici",
+  "email": "fortunato.mafrici@fantacalcio.it"
+}
+
+
+###
+GET http://127.0.0.1:8080/coach
+Accept: application/json
+
+###
+GET http://127.0.0.1:8080/coach/200
+Accept: application/json
+
+###
+GET http://127.0.0.1:8080/coach/500
+Accept: application/json
+
+###
+DELETE http://127.0.0.1:8080/coach/100
+
+###
+DELETE http://127.0.0.1:8080/coach/500
